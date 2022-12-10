@@ -6,9 +6,9 @@ function App() {
 
   const getData=async()=>{
 
-    const PROXY = window.location.hostname === 'localhost' ? '' : 'http://mytest.cafe24app.com';
+    const PROXY = window.location.hostname === 'localhost' ? '' : 'https://mytest.cafe24app.com';
     const URL = `${PROXY}/board`;
-
+    console.log(URL)
     const result=await axios.get(URL,{ validateStatus: false })
     console.log(result)
   }
