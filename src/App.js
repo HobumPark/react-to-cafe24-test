@@ -6,7 +6,11 @@ function App() {
 
   const getData=async()=>{
 
-    const result=await axios.get('/board',{withCredentials: false})
+    //axios.defaults.baseURL = 'http://mytest.cafe24app.com';
+    axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
+    axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+
+    const result=await axios.get('/board')
     console.log(result)
   }
 
