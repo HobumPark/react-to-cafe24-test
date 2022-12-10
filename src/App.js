@@ -10,7 +10,7 @@ function App() {
     axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
     axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 
-    const result=await axios.get('/board')
+    const result=await axios.get('http://mytest.cafe24app.com/board')
     console.log(result)
   }
 
