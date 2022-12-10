@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/api/*"
+  from = "/proxy/*"
   to = "http://mytest.cafe24app.com/"
   status = 200
   force = true

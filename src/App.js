@@ -9,7 +9,7 @@ function App() {
     axios.defaults.headers.get['Content-Type'] ='application/json;charset=utf-8';
     axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
     axios.defaults.headers.get['widthCredentials'] = true
-    const result=await axios.get('/api/board')
+    const result=await axios.get('/proxy/board')
     console.log(result)
   }
 
