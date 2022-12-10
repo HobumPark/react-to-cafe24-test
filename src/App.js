@@ -6,7 +6,7 @@ function App() {
 
   const getData=async()=>{
 
-    const result=await axios.get('/board')
+    const result=await axios.get('/board',{withCredentials: false})
     console.log(result)
   }
 
