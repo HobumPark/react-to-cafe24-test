@@ -5,7 +5,7 @@ import axios from 'axios';
 function App() {
 
   const getData=async()=>{
-    const result=await axios.get('/board')
+    const result=await axios.get('/board',{ validateStatus: false })
     console.log(result)
   }
 
