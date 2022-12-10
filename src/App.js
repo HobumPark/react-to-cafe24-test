@@ -7,10 +7,10 @@ function App() {
   const getData=async()=>{
 
     //axios.defaults.baseURL = 'http://mytest.cafe24app.com';
-    axios.defaults.headers.post['Content-Type'] ='application/json;charset=utf-8';
-    axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-
-    const result=await axios.get('http://mytest.cafe24app.com/board')
+    axios.defaults.headers.get['Content-Type'] ='application/json;charset=utf-8';
+    axios.defaults.headers.get['Access-Control-Allow-Origin'] = '*';
+    axios.defaults.headers.get['widthCredentials'] = true
+    const result=await axios.get('/board')
     console.log(result)
   }
 
