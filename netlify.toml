@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/proxy/*"
-  to = "http://mytest.cafe24app.com/"
+  from = "/board"
+  to = "http://mytest.cafe24app.com/board"
   status = 200
   force = true
