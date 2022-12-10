@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/board"
-  to = "http://mytest.cafe24app.com"
+  to = "http://mytest.cafe24app.com/board"
   status = 200
   force = true
